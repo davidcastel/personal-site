@@ -6,6 +6,7 @@
         <v-img
           height="100vh"
           :src="require(`@/assets/images/Sky Line.jpg`)"
+          alt="Skyline of a city"
           class="align-center"
         >
           <v-card-title height="100vh" class="d-flex flex-column">
