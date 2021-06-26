@@ -1,7 +1,7 @@
 <template>
   <v-container id="about-me" tag="section" class="py-5 px-5 px-md-3">
     <!-- About Me -->
-    <v-card class="mb-3 border-0" color="transparent">
+    <v-card class="mb-3 border-0" color="transparent" outlined>
       <v-row class="g-0 d-flex flex-column flex-sm-row">
         <v-col cols="8" sm="4" class="my-auto mx-auto">
           <v-img
