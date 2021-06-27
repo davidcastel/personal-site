@@ -2,6 +2,7 @@
   <main>
     <Hero />
     <AboutSection />
+    <QualitiesSection />
   </main>
 </template>
 
