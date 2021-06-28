@@ -5,9 +5,9 @@
       <h3 class="text-center">My Qualities</h3>
     </v-flex>
 
-    <v-flex>
+    <v-flex class="py-5">
       <v-tabs centered>
-        <v-tab-slider color="blue"></v-tab-slider>
+        <!-- <v-tab-slider color="blue"></v-tab-slider> -->
         <v-tab
           v-for="tab in tabs"
           :key="tab"
