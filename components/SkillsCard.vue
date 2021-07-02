@@ -38,9 +38,9 @@ export default {
   data() {
     return {
       skills: [
-        { title: "Bilingual", isRows: true, skill: ["Spanish"] },
+        { title: "Languages", isRows: true, skill: ["Spanish"] },
         {
-          title: "Languages",
+          title: "Programming Languages",
           isRows: false,
           skill: [
             { title: "HTML/CSS", progress: 90, color: "red" },
@@ -55,14 +55,15 @@ export default {
           isRows: true,
           skill: [
             "Command-line,",
+            "Linux",
             "Git,",
-            "Jekyll,",
+            "Github,",
             "VsCode,",
             "Vim,",
             "Slack,",
             "Asana,",
             "Figma,",
-            "Github,",
+            "Jekyll,",
           ],
         },
       ],
