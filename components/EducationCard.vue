@@ -1,17 +1,19 @@
 <template>
   <!-- Education -->
-  <div
-    class="tab-pane fade show active"
-    id="education-list"
-    role="tabpanel"
-    aria-labelledby="education-tab"
-  >
-    <div class="">
-      <h4>Software Engineering</h4>
-      <h5 class="muted">Drexel University</h5>
-      <h6 class="muted">2019 - Present</h6>
-    </div>
-  </div>
+  <v-card id="education-list" aria-labelledby="education-tab">
+    <v-card-text class="d-flex flex-row">
+      <v-avatar size="56" class="my-auto">
+        <img src="@/assets/images/Drexel_logo.png" alt="Drexel University" />
+      </v-avatar>
+      <div class="ml-5">
+        <p class="text-sm-h5 mb-2">
+          <strong> Bachelor of Science of Software Engineering </strong>
+        </p>
+        <p class="text-sm-h6 mb-0">Drexel University</p>
+        <p class="text-sm-h6 mb-0">2019 - Present</p>
+      </div>
+    </v-card-text>
+  </v-card>
   <!-- End of Education -->
 </template>
 
