@@ -15,9 +15,7 @@
         </template>
         <template v-else>
           <v-row v-for="item in skill.skill" :key="item">
-            <p>
-              {{ item.title }}
-            </p>
+            <p v-html="item.title"></p>
             <v-progress-linear
               height="10"
               :color="item.color"
@@ -43,10 +41,27 @@ export default {
           title: "Programming Languages",
           isRows: false,
           skill: [
-            { title: "HTML/CSS", progress: 90, color: "red" },
-            { title: "JavaScript", progress: 80, color: "orange" },
-            { title: "Python", progress: 75, color: "light-blue" },
-            { title: "Java", progress: 45, color: "green" },
+            {
+              title: "HTML/CSS &emsp; &emsp;<strong>(Proficient)</strong>",
+              progress: 89,
+              color: "red",
+            },
+            {
+              title: "JavaScript &emsp; &emsp;<strong>(Intermate)</strong>",
+              progress: 80,
+              color: "orange",
+            },
+            {
+              title: "Python &emsp; &emsp; &emsp; <strong>(Novice)</strong>",
+              progress: 65,
+              color: "light-blue",
+            },
+            {
+              title:
+                "Java &emsp; &emsp; &emsp; &emsp;<strong>(Novice)</strong>",
+              progress: 55,
+              color: "green",
+            },
           ],
         },
         { title: "Frameworks", isRows: true, skill: ["Bootstrap"] },
