@@ -9,9 +9,9 @@
           alt="Skyline of a city"
           class="align-center"
         >
-          <v-card-title height="100vh" class="d-flex flex-column">
+          <v-card-title height="100vh" class="d-flex flex-column white--text">
             <h1>Hello, I am :</h1>
-            <h3>David, nice to meet you</h3>
+            <h2 id="heroTypeWriterId" ref="heroTypeWriterId" class=""></h2>
           </v-card-title>
         </v-img>
       </v-card>

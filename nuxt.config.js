@@ -39,6 +39,16 @@ export default {
       {
         src:
           "https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      },
+      // TypeWritter
+      {
+        src: "https://unpkg.com/typewriter-effect@latest/dist/core.js"
+      },
+      // Internal JS
+      {
+        src: "/main.js",
+        type: "text/javascript",
+        body: true
       }
     ]
   },
