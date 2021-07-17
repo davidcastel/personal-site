@@ -1,23 +1,26 @@
 <template>
   <v-card max-height="auto">
-    <v-card-title>
-      <h4>
-        {{ title }}
-      </h4>
-    </v-card-title>
-    <v-card-text>
-      <p class="text-truncate d-block">
-        {{ body_text }}
-      </p>
-    </v-card-text>
-    <v-card-text>
-      <p class="mb-0">
-        <template v-for="lang in languages">
-          {{ lang + " " }}
-        </template>
-      </p>
-    </v-card-text>
-    <v-card-action>
+    <v-row>
+      <v-col cols="3">
+        <v-icon>fab fa-{{ languages[0].tolowerCase }}</v-icon>
+      </v-col>
+      <v-col cols="9">
+        <v-card-title class="text-right">
+          <h4>
+            {{ title }}
+          </h4>
+        </v-card-title>
+        <v-card-text>
+          <p class="text-truncate d-block text-body-2 text-sm-body-1">
+            {{ body_text }}
+          </p>
+          <p class="mb-0 text-body-2">
+            [<template v-for="lang in languages"> {{ lang + " " }} </template>]
+          </p>
+        </v-card-text>
+      </v-col>
+    </v-row>
+    <v-card-actions class="d-flex flex-row justify-space-around">
       <v-btn elevation="2" color="primary" :href="btn_repo_link">
         {{ btn_repo_txt }}
       </v-btn>
@@ -29,7 +32,7 @@
       >
         {{ btn_site_txt }}
       </v-btn>
-    </v-card-action>
+    </v-card-actions>
   </v-card>
 </template>
 
