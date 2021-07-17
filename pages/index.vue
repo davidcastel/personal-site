@@ -3,6 +3,7 @@
     <Hero />
     <AboutSection />
     <QualitiesSection />
+    <ProjectSection />
   </main>
 </template>
 
