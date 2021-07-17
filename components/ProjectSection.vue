@@ -10,7 +10,6 @@
         align-self="stretch"
         cols="12"
         sm="6"
-        lg="4"
       >
         <ProjectCard
           :title="project.cardItems.title"
@@ -77,6 +76,26 @@ export default {
             hasLink: true,
             btn_text: "Vist Site",
             btn_link: "https://davidcastel.github.io/The-Path-Of-Hope/",
+          },
+        },
+        {
+          id: "CVS_library-project",
+          cardItems: {
+            title: "CSV Library",
+            img: "",
+            body: "A python library that I created for my course-long project. It is meant to read CSV files and be able to create and display a table according to the way that the user wants to see it.",
+            languages: [
+              "Python,",
+              "Plotly,",
+              "PySimpleGUI,",
+              "numpy,",
+              "matplotlib",
+            ],
+            btn_repo: "See Source Code",
+            repo_link: "https://github.com/davidcastel/CSV_Library",
+            hasLink: false,
+            btn_text: "",
+            btn_link: "",
           },
         },
       ],
