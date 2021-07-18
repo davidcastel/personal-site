@@ -8,6 +8,7 @@
         v-for="project in projects"
         :key="project.id"
         align-self="stretch"
+        :class="project.cardItems.d_class"
         cols="12"
         sm="6"
       >
@@ -23,7 +24,16 @@
           :btn_site_link="project.cardItems.btn_link"
         />
       </v-col>
-      <v-col cols="12"></v-col>
+    </v-row>
+    <v-row justify="space-around">
+      <v-btn
+        color="#1565C0"
+        class="white--text"
+        large
+        href="https://github.com/davidcastel"
+      >
+        See More Of my Projects
+      </v-btn>
     </v-row>
   </v-container>
 </template>
@@ -42,6 +52,7 @@ export default {
           cardItems: {
             title: "Mystical Maze",
             img: "",
+            d_class: "d-block",
             body: "This is my final project for my Computer Science (CS 171) class. The objective was to use what I learned in the class and be able to create a game. I decided to create a maze game in python on the terminal. The purpose of the game is to have the player go through the maze with seeing the walls and eventually make it to the end of the maze.",
             main_language: "python",
             languages: ["Python"],
@@ -55,6 +66,7 @@ export default {
           cardItems: {
             title: "Banking Project",
             img: "",
+            d_class: "d-block",
             body: "This is my final project for my Software Engineering (SE 181) class. The objective of the project was to implement best software engineering practices while following TDD (Test Driven Development) to be able to build out a banking system. The purpose of the system is to take in a list of string commands in a specific format and watch your money interact with the system and grow over time. The project was built using Java, JDK 11, and JUnit5 to be able to run test on my local machine.",
             main_language: "java",
             languages: ["Java,", "JUnit,", "JDK11"],
@@ -68,6 +80,7 @@ export default {
           cardItems: {
             title: "The Path of Hope",
             img: "",
+            d_class: "d-none d-sm-block",
             body: "This is a project created to tell immigrant children stories in the United States in a childs book style. Implementing original illustrations and stories, the user can have fun reading along with the drawings that show case the story.",
             main_language: "html5",
             languages: ["HTML,", "CSS"],
@@ -83,6 +96,7 @@ export default {
           cardItems: {
             title: "CSV Library",
             img: "",
+            d_class: "d-none d-sm-block",
             body: "A python library that I created for my course-long project. It is meant to read CSV files and be able to create and display a table according to the way that the user wants to see it.",
             main_language: "python",
             languages: [
