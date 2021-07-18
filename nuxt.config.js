@@ -28,6 +28,11 @@ export default {
         rel: "stylesheet",
         href:
           "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      },
+      // Font Awesome
+      {
+        rel: "stylesheet",
+        href: "https://use.fontawesome.com/releases/v5.0.13/css/all.css"
       }
     ],
     script: [
@@ -47,7 +52,7 @@ export default {
       // Tilt JS
       {
         src:
-          "https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+          "https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
       },
       // Internal JS
       {
