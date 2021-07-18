@@ -28,6 +28,11 @@ export default {
         rel: "stylesheet",
         href:
           "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      },
+      // Font Awesome
+      {
+        rel: "stylesheet",
+        href: "https://use.fontawesome.com/releases/v5.0.13/css/all.css"
       }
     ],
     script: [
@@ -43,6 +48,11 @@ export default {
       // TypeWritter
       {
         src: "https://unpkg.com/typewriter-effect@latest/dist/core.js"
+      },
+      // Tilt JS
+      {
+        src:
+          "https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
       },
       // Internal JS
       {

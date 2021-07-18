@@ -29,6 +29,12 @@
       .typeString("David, nice to meet you")
       .start();
   };
+
+  /* Tilt JS
+   * https://github.com/gijsroge/tilt.js
+   * --------------------------------------------- */
+  const tilt_element = $(".tilt-element").tilt();
+
   /* Initialize
    * --------------------------------------------- */
   (function ssInit() {
