@@ -14,6 +14,7 @@
         <ProjectCard
           :title="project.cardItems.title"
           :body_text="project.cardItems.body"
+          :main_language="project.cardItems.main_language"
           :languages="project.cardItems.languages"
           :btn_repo_txt="project.cardItems.btn_repo"
           :btn_repo_link="project.cardItems.repo_link"
@@ -42,12 +43,11 @@ export default {
             title: "Mystical Maze",
             img: "",
             body: "This is my final project for my Computer Science (CS 171) class. The objective was to use what I learned in the class and be able to create a game. I decided to create a maze game in python on the terminal. The purpose of the game is to have the player go through the maze with seeing the walls and eventually make it to the end of the maze.",
-            languages: ["Python3"],
+            main_language: "python",
+            languages: ["Python"],
             btn_repo: "See Source Code",
-            repo_link: "/",
+            repo_link: "https://github.com/davidcastel/Python-Maze",
             hasLink: false,
-            btn_text: "",
-            btn_link: "",
           },
         },
         {
@@ -56,12 +56,11 @@ export default {
             title: "Banking Project",
             img: "",
             body: "This is my final project for my Software Engineering (SE 181) class. The objective of the project was to implement best software engineering practices while following TDD (Test Driven Development) to be able to build out a banking system. The purpose of the system is to take in a list of string commands in a specific format and watch your money interact with the system and grow over time. The project was built using Java, JDK 11, and JUnit5 to be able to run test on my local machine.",
+            main_language: "java",
             languages: ["Java,", "JUnit,", "JDK11"],
             btn_repo: "See Source Code",
-            repo_link: "/",
+            repo_link: "https://github.com/davidcastel/SE-course-project",
             hasLink: false,
-            btn_text: "",
-            btn_link: "",
           },
         },
         {
@@ -70,6 +69,7 @@ export default {
             title: "The Path of Hope",
             img: "",
             body: "This is a project created to tell immigrant children stories in the United States in a childs book style. Implementing original illustrations and stories, the user can have fun reading along with the drawings that show case the story.",
+            main_language: "html5",
             languages: ["HTML,", "CSS"],
             btn_repo: "See Source Code",
             repo_link: "/",
@@ -84,6 +84,7 @@ export default {
             title: "CSV Library",
             img: "",
             body: "A python library that I created for my course-long project. It is meant to read CSV files and be able to create and display a table according to the way that the user wants to see it.",
+            main_language: "python",
             languages: [
               "Python,",
               "Plotly,",
@@ -94,8 +95,6 @@ export default {
             btn_repo: "See Source Code",
             repo_link: "https://github.com/davidcastel/CSV_Library",
             hasLink: false,
-            btn_text: "",
-            btn_link: "",
           },
         },
       ],
