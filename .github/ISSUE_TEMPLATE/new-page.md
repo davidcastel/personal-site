@@ -1,8 +1,8 @@
 ---
-name: New Section
-about: Create a new section for page
+name: New Page
+about: Create a new page that could be implemented
 title: ''
-labels: enhancement
+labels: New Page
 assignees: davidcastel
 
 ---
@@ -11,4 +11,4 @@ assignees: davidcastel
 As a user, I want to be able to [Finish user story here]
 
 ### What to do? 🏗️ : 
-Build [Add what need to be built]
+Build a new page [Add what need to be built]
