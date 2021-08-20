@@ -1,4 +1,6 @@
-# personal-site
+# Personal Site
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/60767a9f-b645-4aee-a3cf-fdae66e5d361/deploy-status)](https://app.netlify.com/sites/dcastell/deploys)
 
 ## Build Setup
 
