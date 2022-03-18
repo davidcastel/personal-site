@@ -54,6 +54,10 @@ export default {
         src:
           "https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
       },
+      // Netlify Identify Widget
+      { 
+        src: "https://identity.netlify.com/v1/netlify-identity-widget.js"
+      },
       // Internal JS
       {
         src: "/main.js",
