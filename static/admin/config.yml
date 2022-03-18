@@ -1,22 +1,18 @@
 backend:
   name: git-gateway
-  branch: # Branch to update (optional; defaults to master)
+  branch: add-cms-feature # Branch to update (optional; defaults to master)
   local_backend: true
 
-media_folder: assets/images
-public_folder: /images
+media_folder: "assets/images"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    format: "frontmatter"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "Home"
+    label: "Home Page Content"
+    files:
+      - label: "Hero"
+        name: "hero"
+        file: "content/Home/hero.json"
+        format: "json"
+        fields:
+          - { label: img, name: image, widget: image }
+          - { label: title, name: title, widget: string }
